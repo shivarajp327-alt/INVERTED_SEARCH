@@ -36,9 +36,9 @@ int insert_file(file_t **, char *);
 int insert_word(char *,char *,mainnode_t *arr[]);
 int isduplicate_file(char *,file_t *);
 int Create_Database(file_t *, mainnode_t *arr[]);
-int Display_Database();
+int Display_Database(mainnode_t *arr[]);
 int Search_Database(char *, mainnode_t *arr[]);
 int Update_Database();
-int Save_Database();
+int Save_Database(mainnode_t *arr[]);
 
 #endif

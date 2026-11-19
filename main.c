@@ -21,7 +21,7 @@ int main(int argc,char *argv[])
                 Create_Database(files,arr);
             break;
             case 2:
-                Display_Database();
+                Display_Database(arr);
             break;
             case 3:
                 printf("Enter word you want to search: ");
@@ -32,7 +32,7 @@ int main(int argc,char *argv[])
                 Update_Database();
             break;
             case 5:
-                Save_Database();
+                Save_Database(arr);
             break;
             case 6:
                 return SUCCESS;
