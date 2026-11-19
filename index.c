@@ -1,6 +1,6 @@
 #include "index.h"
 
-//-------------------------------------------------------------------------------------------------//
+
 
 void display_file(file_t *head)
 {
@@ -18,7 +18,7 @@ void display_file(file_t *head)
     printf("NULL\n");
 }
 
-//-------------------------------------------------------------------------------------------------//
+
 
 int validate_arguments(char *argv[],file_t **files)
 {
@@ -194,7 +194,7 @@ int Create_Database(file_t *files, mainnode_t *arr[])
     return SUCCESS;
 }
 
-//-------------------------------------------------------------------------------------------------//
+
 
 int Display_Database(mainnode_t *arr[])
 {
@@ -223,7 +223,7 @@ int Display_Database(mainnode_t *arr[])
 
 }
 
-//-------------------------------------------------------------------------------------------------//
+
 
 int Search_Database(char *word, mainnode_t *arr[])
 {
@@ -265,14 +265,13 @@ int Search_Database(char *word, mainnode_t *arr[])
 
 }
 
-//-n------------------------------------------------------------------------------------------------//
+
 
 int Update_Database()
 {
 
 }
 
-//-------------------------------------------------------------------------------------------------//
 
 int Save_Database(mainnode_t *arr[])
 {
