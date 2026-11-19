@@ -5,6 +5,7 @@ int main(int argc,char *argv[])
     file_t *files = NULL;
     mainnode_t *arr[27] = {0};
     int choice;
+    char word[size];
 
     validate_arguments(argv,&files);
 
@@ -17,13 +18,15 @@ int main(int argc,char *argv[])
         switch(choice)
         {
             case 1:
-                Create_database();
+                Create_Database(files,arr);
             break;
             case 2:
                 Display_Database();
             break;
             case 3:
-                Search_Database();
+                printf("Enter word you want to search: ");
+                scanf("%s",word);
+                Search_Database(word, arr);
             break;
             case 4:
                 Update_Database();
@@ -37,6 +40,5 @@ int main(int argc,char *argv[])
             default:
                 printf("Invalid choice! Re-try:\n");
         }
-
     }
 }
