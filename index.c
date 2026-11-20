@@ -198,7 +198,7 @@ mainnode_t * update_mainnode(mainnode_t *arr[],int index,char *word,int file_cou
     return M_newnode;
 }
 
-//-------------------------------------------------------------------------------------------------//
+
 
 subnode_t *update_subnode(mainnode_t *arr[],int index,char *filename,int word_count)
 {
@@ -210,7 +210,7 @@ subnode_t *update_subnode(mainnode_t *arr[],int index,char *filename,int word_co
     return S_newnode;
 }
 
-//-------------------------------------------------------------------------------------------------//
+
 
 int validate_update_file(char *fname)
 {
@@ -261,7 +261,7 @@ int validate_update_file(char *fname)
     return SUCCESS;
 }
 
-//-------------------------------------------------------------------------------------------------//
+
 
 
 int Create_Database(file_t *files, mainnode_t *arr[])
@@ -409,7 +409,7 @@ int Update_Database(file_t *files, mainnode_t *arr[])
     return SUCCESS;
 }
 
-//-------------------------------------------------------------------------------------------------//
+
 
 
 int Save_Database(mainnode_t *arr[])

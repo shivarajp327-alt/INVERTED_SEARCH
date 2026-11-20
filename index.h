@@ -31,7 +31,7 @@ typedef struct m_node
     struct m_node *link;
 }mainnode_t;
 
-//-------------------------------------------------------------------------------------------------//
+
 
 int validate_arguments(char *argv[],file_t **);
 int validate_update_file(char *fname);
@@ -46,6 +46,6 @@ int Search_Database(char *, mainnode_t *arr[]);
 int Update_Database(file_t *, mainnode_t *arr[]);
 int Save_Database(mainnode_t *arr[]);
 
-//-------------------------------------------------------------------------------------------------//
+
 
 #endif
