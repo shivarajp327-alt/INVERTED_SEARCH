@@ -31,14 +31,21 @@ typedef struct m_node
     struct m_node *link;
 }mainnode_t;
 
+//-------------------------------------------------------------------------------------------------//
+
 int validate_arguments(char *argv[],file_t **);
+int validate_update_file(char *fname);
 int insert_file(file_t **, char *);
+subnode_t *update_subnode(mainnode_t *arr[],int,char *,int);
+mainnode_t *update_mainnode(mainnode_t *arr[],int,char *,int);
 int insert_word(char *,char *,mainnode_t *arr[]);
 int isduplicate_file(char *,file_t *);
 int Create_Database(file_t *, mainnode_t *arr[]);
-int Display_Database(mainnode_t *arr[]);
+int Display_Database (mainnode_t *arr[]);
 int Search_Database(char *, mainnode_t *arr[]);
-int Update_Database();
+int Update_Database(file_t *, mainnode_t *arr[]);
 int Save_Database(mainnode_t *arr[]);
+
+//-------------------------------------------------------------------------------------------------//
 
 #endif
